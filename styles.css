@@ -1,0 +1,61 @@
+/* Example styles for your portfolio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 20px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-card {
+  width: 30%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
