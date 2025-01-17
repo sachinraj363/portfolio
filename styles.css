@@ -1,68 +1,139 @@
-/* Example styles for your portfolio */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8f9fc;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav {
-  background-color: #333;
+/* Header Styles */
+header {
+  background: linear-gradient(90deg, #9ddfd3, #f6c2d9);
   color: white;
-  padding: 10px;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links {
-  list-style-type: none;
+header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.nav-links li {
-  display: inline;
-  margin-right: 15px;
+header #dark-mode-toggle {
+  background: white;
+  color: #9ddfd3;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
+header #dark-mode-toggle:hover {
+  background-color: #f6e6f3;
 }
 
-.section {
-  padding: 20px;
+/* Section Styles */
+section {
+  padding: 100px 20px 50px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.projects-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.project-card {
-  width: 30%;
-  border: 1px solid #ddd;
-  padding: 10px;
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #9ddfd3;
   text-align: center;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
+section p {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555;
 }
-
+/* Social Media Icons */
 .social-media {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 15px rgba(157, 223, 211, 0.5);
+}
+
+/* Footer Styles */
 footer {
-  background-color: #333;
+  background: linear-gradient(90deg, #9ddfd3, #f6c2d9);
   color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+.dark-mode header {
+  background: linear-gradient(90deg, #444, #222);
+}
+
+.dark-mode footer {
+  background: linear-gradient(90deg, #444, #222);
+}
+
+.dark-mode #dark-mode-toggle {
+  background: #f1f1f1;
+  color: #333;
+}
+.email-container {
+  text-align: center;
+  margin: 20px 0; /* Adds spacing above and below */
+}
+
+.email-container h5 {
+  font-size: 1.2rem;
+  color: #9ddfd3; /* Matches the theme color */
+}
+
+.email {
+  font-size: 1rem;
+  font-weight: bold;
+  color:#555; /* Text color for visibility */
+}
+a {
+  text-decoration: none;
+  color: rgb(74, 62, 85);
 }
